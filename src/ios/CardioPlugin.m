@@ -47,6 +47,8 @@ typedef enum {
         if(requirePostalCode)
             paymentVC.collectPostalCode = [requirePostalCode boolValue];
         
+        paymentVC.hideCardIOLogo = YES;
+        
         [self.viewController presentViewController:paymentVC animated:YES completion:nil];
         
     } else {
